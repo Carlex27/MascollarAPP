@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Mascollar</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="mascollar">Mascollar</string>
+    <string name="logo_mascollar">Logo Mascollar</string>
 </resources>
