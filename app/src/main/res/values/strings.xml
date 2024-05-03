@@ -8,6 +8,10 @@
     <string name="user_in">User1234</string>
     <string name="password_in">qwerty</string>
     <string name= "DBMascollar">Bienvenido a MascollarDB</string>
+    <string name="BtnReadChip">Leer chip de información</string>
+    <string name="BtnQueryCitas">Consultar citas</string>
+    <string name="BtnQueryReg">Consultar registros</string>
+    <string name="BtnAddCitas">Agendar citas</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
