@@ -7,12 +7,12 @@
     <string name="logo_mascollar">Logo Mascollar</string>
     <string name="user_in">User1234</string>
     <string name="password_in">qwerty</string>
-    <string name= "DBMascollar">Bienvenido a MascollarDB</string>
+    <string name="DBMascollar">Bienvenido a MascollarDB</string>
     <string name="BtnReadChip">Leer chip de información</string>
     <string name="BtnQueryCitas">Consultar citas</string>
     <string name="BtnQueryReg">Consultar registros</string>
     <string name="BtnAddCitas">Agendar citas</string>
-
+    <string name="placeholder_search">Search</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -49,4 +49,5 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_empty">EmptyActivity</string>
 </resources>
