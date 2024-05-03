@@ -13,16 +13,8 @@
         android:theme="@style/Theme.Mascollar"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Mascollar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".dbMenu"
+            android:exported="false" />
         <activity
             android:name=".loginmain"
             android:exported="true"

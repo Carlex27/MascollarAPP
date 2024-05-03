@@ -10,7 +10,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/buttonLogin"
@@ -20,7 +26,6 @@
             android:layout_marginEnd="125dp"
             android:layout_marginBottom="100dp"
             android:text="@string/login"
-            android:onClick="openMainLogin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -34,9 +39,10 @@
             android:layout_marginBottom="80dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/user"
+            android:hint="@string/user_in"
             android:inputType="text"
             android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
             app:layout_constraintBottom_toTopOf="@+id/TxtPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,14 +57,40 @@
             android:layout_marginBottom="80dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/password"
+            android:hint="@string/password_in"
             android:inputType="textPassword"
             android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
             app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.421"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="LabelFor,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/LBUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="281dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/user"
+            app:layout_constraintBottom_toTopOf="@+id/TxtUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/password"
+            app:layout_constraintBottom_toTopOf="@+id/TxtPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
