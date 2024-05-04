@@ -1,7 +1,7 @@
 package com.example.mascollar
 
 import android.os.Bundle
-import android.widget.GridLayout.Alignment
+import androidx.compose.ui.Alignment
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +32,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.mascollar.ui.theme.MascollarTheme
+import androidx.compose.foundation.layout.*
 
 class LoginMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,16 +64,18 @@ fun MaquetadoGUI(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(20.dp),
     ) {
         Image(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(20.dp),
             painter = painterResource(id = R.drawable.iconmain),
             contentDescription = "Logo mascollar"
 
         )
         Column(
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier
+                .padding(16.dp)
+                .align(Alignment.CenterHorizontally)
         ) {
             Text(text = "Usuario", color = Color.Black)
             TextField(
@@ -91,10 +94,13 @@ fun MaquetadoGUI(navController: NavController) {
                 visualTransformation = PasswordVisualTransformation(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
             )
-        }
-        Button(onClick = { navController.navigate("dbMenu") }, modifier = Modifier.padding(16.dp)) {
-            Text("Iniciar Sesión")
+            Button(
+                onClick = { navController.navigate("dbMenu") },
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+            ) {
+                Text("Iniciar Sesión")
 
+            }
         }
 
 
