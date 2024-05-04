@@ -2,9 +2,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/loginMain"
+        android:name="com.example.mascollar.LoginMain"
+        android:label="loginMain" >
+        <action
+            android:id="@+id/action_loginMain_to_dbMenu"
+            app:destination="@id/dbMenu" />
+    </fragment>
+
     <fragment
         android:id="@+id/dbMenu"
-        android:name="com.example.mascollar.DBMenu"
+        android:name="com.example.mascollar.Vistas.DBMenu"
         android:label="dbMenu" >
 
     </fragment>

@@ -27,18 +27,17 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.mascollar.ui.theme.MascollarTheme
-import androidx.compose.foundation.layout.*
 
 class LoginMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             val navController = rememberNavController()
+
             MascollarTheme {
                 MaquetadoGUI(navController)
             }
