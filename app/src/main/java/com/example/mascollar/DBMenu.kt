@@ -51,6 +51,11 @@ fun ButtonOption(text: String) {
 }
 
 @Composable
+fun Textos(){
+
+}
+
+@Composable
 fun MaquetadoGUI() {
 
 
