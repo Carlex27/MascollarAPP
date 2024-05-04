@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/dbMenu"
-        android:name="com.example.mascollar.Vistas.DBMenu"
+        android:name="com.example.mascollar.DBMenu"
         android:label="dbMenu" >
 
     </fragment>

@@ -1,4 +1,4 @@
-package com.example.mascollar.Vistas
+package com.example.mascollar
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

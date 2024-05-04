@@ -13,17 +13,17 @@
         android:theme="@style/Theme.Mascollar"
         tools:targetApi="31" >
         <activity
-            android:name=".Vistas.CreateRemainder"
+            android:name=".CreateRemainder"
             android:exported="false"
             android:label="@string/title_activity_create_remainder"
             android:theme="@style/Theme.Mascollar" />
         <activity
-            android:name=".Vistas.SeeProfile"
+            android:name=".SeeProfile"
             android:exported="false"
             android:label="@string/title_activity_see_profile"
             android:theme="@style/Theme.Mascollar" />
         <activity
-            android:name=".Vistas.MainScreen"
+            android:name=".MainScreen"
             android:exported="false"
             android:label="@string/title_activity_main_screen"
             android:theme="@style/Theme.Mascollar" />
@@ -33,7 +33,7 @@
             android:label="@string/title_activity_empty"
             android:theme="@style/Theme.Mascollar" />
         <activity
-            android:name=".Vistas.DBMenu"
+            android:name=".DBMenu"
             android:exported="false" />
         <activity
             android:name=".LoginMain"
