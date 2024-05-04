@@ -46,3 +46,8 @@ fun ButtonOption(text: String){
     }
 }
 
+@Composable
+fun Textos(){
+
+}
+
