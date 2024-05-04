@@ -13,10 +13,15 @@
         android:theme="@style/Theme.Mascollar"
         tools:targetApi="31">
         <activity
-            android:name=".dbMenu"
+            android:name=".EmptyActivity"
+            android:exported="false"
+            android:label="@string/title_activity_empty"
+            android:theme="@style/Theme.Mascollar" />
+        <activity
+            android:name=".DBMenu"
             android:exported="false" />
         <activity
-            android:name=".loginmain"
+            android:name=".LoginMain"
             android:exported="true"
             android:theme="@style/Theme.Mascollar">
             <intent-filter>
