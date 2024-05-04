@@ -43,33 +43,39 @@ fun MaquetadoSeeProfile() {
     Column(modifier = Modifier
         .padding(16.dp)
         .fillMaxSize(),
-        verticalArrangement = Arrangement.spacedBy(15.dp)) {
+        verticalArrangement = Arrangement.spacedBy(15.dp),
+        ) {
         Column(modifier = Modifier.fillMaxWidth(),
             horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally,
+
             ){
             Text(text = "Perfil", style = MaterialTheme.typography.titleLarge)
         }
+        Column (modifier = Modifier.fillMaxSize().padding(25.dp),
+            verticalArrangement = Arrangement.spacedBy(20.dp)
+            ){
+            Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
+                Text(text = "Nombre:")
+                Text(text = "\t" + observableData.value[0])
+            }
+            Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
+                Text(text = "Apellido:")
+                Text(text = "\t" + observableData.value[1])
+            }
+            Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
+                Text(text = "Mascota:")
+                Text(text = "\t" + observableData.value[2])
+            }
+            Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
+                Text(text = "Edad de la mascota:")
+                Text(text = "\t" + observableData.value[3])
+            }
+            Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
+                Text(text = "Nombre de la mascota:")
+                Text(text = "\t" + observableData.value[4])
+            }
+        }
 
-        Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-            Text(text = "Nombre:")
-            Text(text = "\t" + observableData.value[0])
-        }
-        Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-            Text(text = "Apellido:")
-            Text(text = "\t" + observableData.value[1])
-        }
-        Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-            Text(text = "Mascota:")
-            Text(text = "\t" + observableData.value[2])
-        }
-        Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-            Text(text = "Edad de la mascota:")
-            Text(text = "\t" + observableData.value[3])
-        }
-        Row (verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-            Text(text = "Nombre de la mascota:")
-            Text(text = "\t" + observableData.value[4])
-        }
 
     }
 }

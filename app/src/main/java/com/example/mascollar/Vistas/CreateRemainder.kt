@@ -62,10 +62,11 @@ fun MaquetadoCreateRemainder() {
             TextField(value = "", onValueChange = {})
 
             Text(text = "Fecha del recordatorio:")
+            //AQUI VA UN BOTON QUE TE PERMITA SELECCIONAR LA FECHA
             Button(onClick = { /*TODO*/ }) {
                 Text(text = "Seleccionar fecha")
             }
-
+            //UN BOTON QUE TE PERMITA SELECCIONAR LA HORA
             Text(text = "Hora del recordatorio:")
             Button(onClick = { /*TODO*/ }) {
                 Text(text = "Seleccionar hora")
