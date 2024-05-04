@@ -19,6 +19,7 @@ navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
 navigationRuntimeKtx = "2.7.7"
 navigationCompose = "2.7.7"
+accompanistNavigationAnimation = "0.35.0-alpha"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,6 +47,7 @@ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navi
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+accompanist-navigation-animation = { group = "com.google.accompanist", name = "accompanist-navigation-animation", version.ref = "accompanistNavigationAnimation" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
